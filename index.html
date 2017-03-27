@@ -1,14 +1,73 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>Wcder</title>
+  <title>WorldCosplayDownloader</title>
   <base href="https://Wakamura.github.io/worldcosplaydownloader/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+
+<link href="styles.5faf574a3c44618394a7.bundle.css" rel="stylesheet"/></head>
+
 <body>
-  <app-root>Loading...</app-root>
-<script type="text/javascript" src="inline.8c9896aa76a7a3b99b63.bundle.js"></script><script type="text/javascript" src="polyfills.18173234f9641113b9fe.bundle.js"></script><script type="text/javascript" src="vendor.f36e67a015c3c29a1576.bundle.js"></script><script type="text/javascript" src="main.03f8e5595b59bada5067.bundle.js"></script></body>
+  <app-root>
+    <style type="text/css">
+      #pre-bootstrap {
+        background-color: #000000;
+        bottom: 0px;
+        left: 0px;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        transition: opacity .7s ease-in-out;
+        z-index: 999999;
+      }
+      
+      #pre-bootstrap div.messaging {
+        color: #ffffff;
+        /*font-family: monospace;*/
+        left: 0px;
+        margin-top: -37px;
+        position: absolute;
+        right: 0px;
+        text-align: center;
+        top: 50%;
+      }
+      
+      #pre-bootstrap h1 {
+        font-size: 26px;
+        line-height: 35px;
+        margin: 0px 0px 20px 0px;
+      }
+      
+      #pre-bootstrap p {
+        font-size: 18px;
+        line-height: 14px;
+        margin: 0px 0px 0px 0px;
+      }
+
+    </style>
+
+    <div id="pre-bootstrap">
+      <div class="messaging">
+        <!--<h1>
+          Loading
+        </h1>-->
+        <div class="card" style="width:100%; height:100%; position: absolute; z-index: 9999; text-align: center; transition: opacity .8s ease-in-out;" *ngIf="isLoading">
+          <h1 class="card-header">Loading...</h1>
+          <div class="card-block text-xs-center">
+            <i class="fa fa-circle-o-notch fa-spin fa-3x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </app-root>
+
+  <!-- jQuery library (served from Google) -->
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+<script type="text/javascript" src="inline.820a0c2ba1ea657e018b.bundle.js"></script><script type="text/javascript" src="polyfills.e85682a132e79378d369.bundle.js"></script><script type="text/javascript" src="vendor.dc5aaae4aa3d0bea3c72.bundle.js"></script><script type="text/javascript" src="main.81d3a9ae5fa35722dc9d.bundle.js"></script></body>
+
 </html>
