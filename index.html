@@ -10,7 +10,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
 
-<link href="styles.29df2689376c19f8241b.bundle.css" rel="stylesheet"></head>
+<link href="styles.d89ad275711b88c7cac9.bundle.css" rel="stylesheet"></head>
 
 <body>
   <app-root>
@@ -67,7 +67,23 @@
   </app-root>
 
   <!-- jQuery library (served from Google) -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" src="inline.905895c83967b01f4002.bundle.js"></script><script type="text/javascript" src="vendor.dbe2be5ede20c7ddf998.bundle.js"></script><script type="text/javascript" src="main.ff7733f431be84515d60.bundle.js"></script></body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.accordion-item input:checkbox').click(function () {
+        $('.accordion input:checkbox').not(this).prop('checked', false);
+      });
+    });
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-96587673-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+<script type="text/javascript" src="inline.001e6ae4aa3846895cc6.bundle.js"></script><script type="text/javascript" src="vendor.4a187c494ff65e291b5a.bundle.js"></script><script type="text/javascript" src="main.462a16967b5f03830c73.bundle.js"></script></body>
 
 </html>
